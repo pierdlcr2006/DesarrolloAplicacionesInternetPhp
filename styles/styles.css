@@ -1,0 +1,85 @@
+:root{
+    --font : "Bodoni Moda", serif;
+    --fontBold : 700;
+    --white : #FFFF;
+    --resNeg : red;
+    --resPos : green;
+    --primaryColor : #f0f4f8;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    font-family: var(--font);
+    background-color: var(--primaryColor);
+}
+span{
+    font-weight: var(--fontBold);
+
+}
+.imagen-cetrada{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+.formulario{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.formulario-centrado{
+    background-color: lightsteelblue;
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    padding: 2rem;
+    gap: 1rem;
+    border-radius: 2rem;
+    margin: 2rem;
+}
+.label {
+    font-weight: var(--fontBold);
+    font-size: 2rem;
+}
+.boton{
+    padding: 1rem ;
+    border: none;
+    border-radius: 1rem;
+    background-color: cornflowerblue;
+    cursor: pointer;
+    width: 10rem;
+    align-self: self-end;
+}
+.boton:hover{
+    background-color: white;
+}
+.input{
+    padding: 1.5rem;
+    border: none;
+    border-radius: 1rem;
+}
+.resultado{
+    background-color: cornflowerblue;
+    border-radius: 1rem;
+    width: 40rem;
+    text-align: center;
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: var(--fontBold);
+}
+.res-pos{
+    background-color: var(--resPos);
+}
+.res-neg{
+    background-color: var(--resNeg);
+}
