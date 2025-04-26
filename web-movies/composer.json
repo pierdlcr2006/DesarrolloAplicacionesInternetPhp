@@ -1,0 +1,12 @@
+{
+    "name": "piero/web-movies",
+    "description": "aplicare mis conocimientos de crud y active  records en la creacion de una web que pueda administrar las peliculas",
+    "autoload": {
+        "psr-4": {
+            "Model\\": "./classes"
+        }
+    },
+    "require": {
+        "intervention/image": "^3.11"
+    }
+}

@@ -1,6 +1,6 @@
 <?php
-require 'footer.php';
-require 'funciones.php';
+require '../header.php';
+require '../funciones.php';
 $usuario = "";
 $email = "";
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {

@@ -1,5 +1,5 @@
 <?php
-require 'footer.php';
+require 'header.php';
 require 'funciones.php';
 $resultado = 0;
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {

@@ -1,5 +1,5 @@
 <?php
-require 'footer.php';
+require 'header.php';
 require 'funciones.php';
 $num1 = 0;
 $num2 = 0;

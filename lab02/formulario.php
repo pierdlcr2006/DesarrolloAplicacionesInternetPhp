@@ -11,6 +11,7 @@ $comprobar = '';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $enviar = $_POST['enviar'] ?? '';
     $clean = $_POST['clean'] ?? '';
+    debuguear($_POST);
 
     if ($enviar) {
         $nombre = $_POST['nombre'] ;
@@ -56,6 +57,7 @@ require 'header.php';
 ?>
 
 
+
 <body>
     <?php
         foreach ($errores as $error):?>
@@ -68,7 +70,7 @@ require 'header.php';
         <div class="mb-3">
             <h2 class="text-center ">Datos de Usuario</h2>
         </div>
-        <form method="post">
+        <form method="post"  >
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre y Apellido</label>
                 <input name="nombre" type="text" class="form-control" id="nombre" value="<?php echo $nombre ?>" placeholder="Nombre y Apellido">
